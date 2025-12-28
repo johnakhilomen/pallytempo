@@ -2,8 +2,17 @@ import './App.css'
 import { landingData } from './data'
 
 function App() {
-  const { navLeft, navRight, brand, hero, scrollLabel, player, catalogue } =
-    landingData
+  const {
+    navLeft,
+    navRight,
+    brand,
+    hero,
+    scrollLabel,
+    player,
+    catalogue,
+    socialLinks,
+    footer,
+  } = landingData
 
   return (
     <div className="page">
@@ -31,6 +40,25 @@ function App() {
                   {item}
                 </a>
               ))}
+              <div className="social-menu">
+                <button className="social-trigger" type="button">
+                  {socialLinks.label}
+                  <span aria-hidden="true">▾</span>
+                </button>
+                <div className="social-dropdown" role="menu">
+                  {socialLinks.links.map((link) => (
+                    <a
+                      key={link.name}
+                      className="social-link"
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </nav>
 
@@ -102,6 +130,43 @@ function App() {
             ))}
           </div>
         </section>
+
+        <footer className="footer" aria-label="Footer">
+          <div className="footer-top">
+            <div>
+              <p className="footer-eyebrow">{footer.eyebrow}</p>
+              <h2 className="footer-title">{footer.title}</h2>
+              <p className="footer-description">{footer.description}</p>
+            </div>
+            <form className="footer-form">
+              <input
+                className="footer-input"
+                type="email"
+                placeholder={footer.placeholder}
+              />
+              <button className="footer-button" type="submit">
+                {footer.buttonLabel}
+              </button>
+            </form>
+          </div>
+
+          <div className="footer-links">
+            {footer.links.map((link) => (
+              <a key={link.label} className="footer-link" href={link.url}>
+                {link.label}
+              </a>
+            ))}
+          </div>
+
+          <div className="footer-bottom">
+            <p className="footer-brand">{brand}</p>
+            <div className="footer-meta">
+              {footer.meta.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   )

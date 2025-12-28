@@ -2,6 +2,18 @@ export const landingData = {
 	brand: 'PAULLY TEMPO',
 	navLeft: ['TOUR', 'SHOP'],
 	navRight: ['ALBUM', 'CONTACT'],
+	socialLinks: {
+		label: 'Listen',
+		links: [
+			{ name: 'Spotify', url: 'https://open.spotify.com' },
+			{ name: 'Amazon', url: 'https://music.amazon.com' },
+			{ name: 'YouTube', url: 'https://www.youtube.com' },
+			{ name: 'Tidal', url: 'https://tidal.com' },
+			{ name: 'Audiomack', url: 'https://audiomack.com' },
+			{ name: 'Deezer', url: 'https://www.deezer.com' },
+			{ name: 'Boomplay', url: 'https://www.boomplay.com' },
+		],
+	},
 	hero: {
 		ariaLabel: 'PAULLY TEMPO hero banner',
 		kicker: 'UBER by__',
@@ -27,23 +39,23 @@ export const landingData = {
 			'Dive into rare cuts, remastered staples, and stage visuals that defined each era.',
 		cards: [
 			{
-				title: 'Renaissance',
-				subtitle: 'Midnight Studio Mix',
-				year: '2022',
+				title: 'Uber',
+				subtitle: 'Single Release',
+				year: '2025',
 			},
 			{
-				title: 'Lemonade',
-				subtitle: 'Visual Album Set',
+				title: 'Sote',
+				subtitle: 'Single Release',
 				year: '2016',
 			},
 			{
-				title: 'Homecoming',
-				subtitle: 'Live in Coachella',
+				title: 'Sote',
+				subtitle: 'Single Release',
 				year: '2019',
 			},
 			{
-				title: 'B’Day',
-				subtitle: 'Anniversary Deluxe',
+				title: 'Sote',
+				subtitle: 'Single Release',
 				year: '2006',
 			},
 		],
@@ -52,5 +64,20 @@ export const landingData = {
 			{ label: 'Tours', value: '12' },
 			{ label: 'Awards', value: '530+' },
 		],
+	},
+	footer: {
+		eyebrow: 'Stay Close',
+		title: 'Join the Paully Tempo list',
+		description:
+			'Get first access to tour drops, vinyl pressings, and behind-the-scenes sessions.',
+		placeholder: 'Enter your email',
+		buttonLabel: 'Notify me',
+		links: [
+			{ label: 'Tour dates', url: '#' },
+			{ label: 'Merch shop', url: '#' },
+			{ label: 'Press kit', url: '#' },
+			{ label: 'Licensing', url: '#' },
+		],
+		meta: ['Privacy', 'Terms', 'Support'],
 	},
 };
