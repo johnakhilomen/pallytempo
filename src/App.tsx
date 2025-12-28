@@ -13,6 +13,7 @@ function App() {
           aria-label={hero.ariaLabel}
           style={{
             backgroundImage: `${hero.overlayGradient}, url(${hero.backgroundImage})`,
+            backgroundPosition: hero.backgroundPosition ?? 'center',
           }}
         >
           <nav className="nav">

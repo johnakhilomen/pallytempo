@@ -6,11 +6,11 @@ export const landingData = {
 		ariaLabel: 'PAULLY TEMPO hero banner',
 		kicker: 'UBER by__',
 		title: 'PAULLY TEMPO',
-		subtitle: 'Live from the world tour archives',
-		backgroundImage:
-			'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1600&q=80',
+		subtitle: 'The King of Afrobeats crafting a new era',
+		backgroundImage: '/images/pic1.png',
 		overlayGradient:
 			'linear-gradient(120deg, rgba(18, 12, 20, 0.2) 0%, rgba(10, 8, 18, 0.7) 70%)',
+		backgroundPosition: 'center 10%',
 	},
 	scrollLabel: 'SCROLL NOW',
 	player: {
