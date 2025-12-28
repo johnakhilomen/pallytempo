@@ -69,7 +69,7 @@ export const landingData = {
 		eyebrow: 'Stay Close',
 		title: 'Join the Paully Tempo list',
 		description:
-			'Get first access to tour drops, vinyl pressings, and behind-the-scenes sessions.',
+			'Put some description text here to get people excited about signing up to your newsletter.',
 		placeholder: 'Enter your email',
 		buttonLabel: 'Notify me',
 		links: [
